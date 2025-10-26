@@ -1,4 +1,6 @@
 library;
+export 'dart:developer' show log;
+
 /// pub.dev packages
 export 'package:cached_network_image/cached_network_image.dart';
 export 'package:flutter/material.dart';

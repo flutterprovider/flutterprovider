@@ -1,4 +1,4 @@
-import '../../flutterui.dart';
+import 'package:flutterprovider/flutterprovider.dart';
 
 class PersonalInfoCard extends StatelessWidget {
   final String iconPath;

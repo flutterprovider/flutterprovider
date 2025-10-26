@@ -1,10 +1,6 @@
 import 'dart:developer';
 
-import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:google_fonts/google_fonts.dart';
-
-import '../../flutterui.dart';
+import 'package:flutterprovider/flutterprovider.dart';
 
 class ServiceDetails extends StatelessWidget {
   final String? category;

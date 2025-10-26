@@ -1,4 +1,4 @@
-import '../../flutterui.dart';
+import 'package:flutterprovider/flutterprovider.dart';
 
 class UserExpansionTile extends StatelessWidget {
   final String dp;
