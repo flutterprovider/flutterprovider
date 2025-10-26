@@ -32,11 +32,12 @@ flutter:
     - assets/audios/
     - assets/gifs/
     - assets/icons/
-    - assets/images/
-    - assets/jsons/
-    - assets/lottiefiles/
-    - assets/texts/
-    - assets/videos/
+# if folder is empty it will not push to GitHub. comment it or add .gitkeep file in empty folder
+#    - assets/images/
+#    - assets/jsons/
+#    - assets/lottiefiles/
+#    - assets/texts/
+#    - assets/videos/
 
 topics:
   - class
