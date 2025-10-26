@@ -28,12 +28,12 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/
-    - assets/audios/
-    - assets/gifs/
+#    - assets/
+#    - assets/audios/
+#    - assets/gifs/
     - assets/icons/
 # if folder is empty it will not push to GitHub. comment it or add .gitkeep file in empty folder
-#    - assets/images/
+    - assets/images/
 #    - assets/jsons/
 #    - assets/lottiefiles/
 #    - assets/texts/
