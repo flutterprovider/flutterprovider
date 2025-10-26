@@ -23,4 +23,6 @@ export 'src/aaspas/other_widgets/widget_heading.dart';
 export "src/moyo/list_cards/provider_service_list_card.dart";
 export "src/moyo/list_cards/user_interested_provider_list_card.dart";
 export "src/moyo/list_cards/user_service_list_card.dart";
+export "src/moyo/list_cards/personal_info_card.dart";
+export "src/moyo/list_cards/user_address_card.dart";
 export 'src/moyo/moyo_color_box.dart';
