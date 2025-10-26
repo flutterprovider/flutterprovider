@@ -1,0 +1,66 @@
+name: flutterprovider
+description: "Flutter Provider is a faster UI development kit"
+version: 0.0.1
+homepage: https://github.com/flutterprovider/flutterprovider
+repository: https://github.com/flutterprovider/flutterprovider.git
+issue_tracker: https://github.com/flutterprovider/flutterprovider/issues
+
+environment:
+  sdk: ^3.9.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  # added dependencies
+  flutter_launcher_icons: ^0.14.4
+  cached_network_image: ^3.4.1
+  google_fonts: ^6.3.2
+  flutter_svg: ^2.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/audios/
+    - assets/gifs/
+    - assets/icons/
+    - assets/images/
+    - assets/jsons/
+    - assets/lottiefiles/
+    - assets/texts/
+    - assets/videos/
+
+topics:
+  - class
+  - widget
+  - animation
+  - extension
+
+
+screenshots:
+  - path: screenshots/flutterprovider.png
+    description: "Package icon"
+  # - path: screenshots/button_pressed.png
+  #   description: "Button pressed animation"
+
+# funding:
+#   - https://github.com/sponsors/yourusername
+
+platforms:
+  android:
+  ios:
+  web:
+  macos:
+  windows:
+  linux:
+
+license: MIT
+
