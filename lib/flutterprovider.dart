@@ -21,7 +21,7 @@ export 'src/aaspas/other_widgets/item_chip.dart';
 export 'src/aaspas/other_widgets/item_chip_close.dart';
 export 'src/aaspas/other_widgets/widget_heading.dart';
 
-/// [moyo]
+/// [moyo-project]
 /// Details Cards
 export "src/moyo/details_widgets/user_service_details.dart";
 /// List Cards
