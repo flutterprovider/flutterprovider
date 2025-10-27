@@ -56,19 +56,14 @@ class UserServiceListCard extends StatelessWidget {
                         "$category > $subCategory",
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: GoogleFonts.roboto(
-                          textStyle: Theme.of(context).textTheme.titleMedium
-                              ?.copyWith(fontWeight: FontWeight.w600),
-                          color: Color(0xFF1D1B20),
-                        ),
+                        style: Theme.of(context).textTheme.titleMedium
+                            ?.copyWith(fontWeight: FontWeight.w600,color: Color(0xFF1D1B20),),
                       ),
                     ),
                     Text(
                       date ?? "No date",
-                      style: GoogleFonts.roboto(
-                        textStyle: Theme.of(context).textTheme.labelLarge
-                            ?.copyWith(color: Colors.black.withAlpha(100)),
-                      ),
+                      style: Theme.of(context).textTheme.labelLarge
+                          ?.copyWith(color: Colors.black.withAlpha(100)),
                     ),
                   ],
                 ),
@@ -124,14 +119,12 @@ class UserServiceListCard extends StatelessWidget {
                                   "₹ ${price ?? "No price"} /-",
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
-                                  style: GoogleFonts.roboto(
-                                    textStyle: Theme.of(context)
-                                        .textTheme
-                                        .titleMedium
-                                        ?.copyWith(
-                                          fontWeight: FontWeight.w700,
-                                          fontSize: 18,
-                                        ),
+                                  style:  Theme.of(context)
+                                      .textTheme
+                                      .titleMedium
+                                      ?.copyWith(
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 18,
                                     color: Color(0xFF1D1B20),
                                   ),
                                 ),
@@ -141,13 +134,11 @@ class UserServiceListCard extends StatelessWidget {
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 textAlign: TextAlign.end,
-                                style: GoogleFonts.roboto(
-                                  textStyle: Theme.of(context)
-                                      .textTheme
-                                      .labelLarge
-                                      ?.copyWith(
-                                        color: MoyoColorBox.moyoOrange,
-                                      ),
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .labelLarge
+                                    ?.copyWith(
+                                  color: MoyoColorBox.moyoOrange,
                                 ),
                               ),
                             ],
@@ -173,13 +164,11 @@ class UserServiceListCard extends StatelessWidget {
                                     priceBy ?? "N/A",
                                     maxLines: 2,
                                     overflow: TextOverflow.ellipsis,
-                                    style: GoogleFonts.roboto(
-                                      textStyle: Theme.of(context)
-                                          .textTheme
-                                          .bodyMedium
-                                          ?.copyWith(
-                                            fontWeight: FontWeight.w500,
-                                          ),
+                                    style:  Theme.of(context)
+                                        .textTheme
+                                        .bodyMedium
+                                        ?.copyWith(
+                                      fontWeight: FontWeight.w500,
                                       color: MoyoColorBox.moyoOrange,
                                     ),
                                   ),
@@ -196,13 +185,11 @@ class UserServiceListCard extends StatelessWidget {
                                         "${providerCount ?? "No Count"}",
                                         maxLines: 1,
                                         overflow: TextOverflow.ellipsis,
-                                        style: GoogleFonts.roboto(
-                                          textStyle: Theme.of(context)
-                                              .textTheme
-                                              .bodyMedium
-                                              ?.copyWith(
-                                                fontWeight: FontWeight.w500,
-                                              ),
+                                        style:  Theme.of(context)
+                                            .textTheme
+                                            .bodyMedium
+                                            ?.copyWith(
+                                          fontWeight: FontWeight.w500,
                                           color: MoyoColorBox.moyoOrange,
                                         ),
                                       ),
@@ -245,12 +232,10 @@ class UserServiceListCard extends StatelessWidget {
             "Ongoing",
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: GoogleFonts.roboto(
-              textStyle: Theme.of(
-                context,
-              ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w500),
-              color: Color(0xFF1A4E88),
-            ),
+            style: Theme.of(
+              context,
+            ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w500,color: Color(0xFF1A4E88),),
+
           ),
         );
       case 'completed':
@@ -264,12 +249,10 @@ class UserServiceListCard extends StatelessWidget {
             "Completed",
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: GoogleFonts.roboto(
-              textStyle: Theme.of(
-                context,
-              ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w500),
-              color: MoyoColorBox.moyoGreen,
-            ),
+            style: Theme.of(
+              context,
+            ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w500,color: MoyoColorBox.moyoGreen,),
+
           ),
         );
       case 'cancelled':
@@ -283,12 +266,10 @@ class UserServiceListCard extends StatelessWidget {
             "Cancelled",
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: GoogleFonts.roboto(
-              textStyle: Theme.of(
-                context,
-              ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w500),
-              color: Color(0xFFDB4A4C),
-            ),
+            style: Theme.of(
+              context,
+            ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w500, color: Color(0xFFDB4A4C),),
+
           ),
         );
 

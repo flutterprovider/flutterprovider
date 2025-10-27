@@ -163,12 +163,10 @@ class UserAddressListCard extends StatelessWidget {
           "Primary",
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
-          style: GoogleFonts.roboto(
-            textStyle: Theme.of(
-              context,
-            ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w500),
-            color: Color(0xFFFFFFFF),
-          ),
+          style: Theme.of(
+            context,
+          ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w500, color: Color(0xFFFFFFFF),),
+
         ),
       ),
     );

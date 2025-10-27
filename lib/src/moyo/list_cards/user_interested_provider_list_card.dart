@@ -110,20 +110,16 @@ class UserInterestedProviderListCard extends StatelessWidget {
                   providerName ?? "no name",
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: GoogleFonts.roboto(
-                    textStyle: Theme.of(context).textTheme.titleMedium
-                        ?.copyWith(fontWeight: FontWeight.w600),
-                    color: Color(0xFF1D1B20),
-                  ),
+                  style: Theme.of(context).textTheme.titleMedium
+                      ?.copyWith(fontWeight: FontWeight.w600,color: Color(0xFF1D1B20),),
+
                 ),
                 Text(
                   "(${gender ?? "no gender"} - ${age ?? "No age"}years)",
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: GoogleFonts.roboto(
-                    textStyle: Theme.of(context).textTheme.titleSmall?.copyWith(
-                      fontWeight: FontWeight.w600,
-                    ),
+                  style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                    fontWeight: FontWeight.w600,
                     color: Color(0xFF808080),
                   ),
                 ),
@@ -137,18 +133,14 @@ class UserInterestedProviderListCard extends StatelessWidget {
             children: [
               Text(
                 distance ?? "No distance",
-                style: GoogleFonts.roboto(
-                  textStyle: Theme.of(context).textTheme.labelLarge?.copyWith(
-                    color: Colors.black.withAlpha(100),
-                  ),
+                style:  Theme.of(context).textTheme.labelLarge?.copyWith(
+                  color: Colors.black.withAlpha(100),
                 ),
               ),
               Text(
                 "(${reachTime ?? "No reachTime"})",
-                style: GoogleFonts.roboto(
-                  textStyle: Theme.of(context).textTheme.labelLarge?.copyWith(
-                    color: Colors.black.withAlpha(100),
-                  ),
+                style:  Theme.of(context).textTheme.labelLarge?.copyWith(
+                  color: Colors.black.withAlpha(100),
                 ),
               ),
             ],
@@ -172,11 +164,9 @@ class UserInterestedProviderListCard extends StatelessWidget {
         maxLines: 2,
         overflow: TextOverflow.ellipsis,
         "${category ?? "No category"} • ${subCategory ?? "No subCategory"}",
-        style: GoogleFonts.roboto(
-          textStyle: Theme.of(
-            context,
-          ).textTheme.labelLarge?.copyWith(color: Colors.black.withAlpha(100)),
-        ),
+        style: Theme.of(
+          context,
+        ).textTheme.labelLarge?.copyWith(color: Colors.black.withAlpha(100)),
       ),
     );
   }
@@ -205,10 +195,8 @@ class UserInterestedProviderListCard extends StatelessWidget {
                 "₹ ${chargeRate ?? "no chargeRate"}",
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: GoogleFonts.roboto(
-                  textStyle: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.w700,
-                  ),
+                style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.w700,
                   color: Color(0xFF1D1B20),
                 ),
               ),
@@ -222,10 +210,8 @@ class UserInterestedProviderListCard extends StatelessWidget {
                   "Verified",
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: GoogleFonts.roboto(
-                    textStyle: Theme.of(context).textTheme.titleSmall?.copyWith(
-                      fontWeight: FontWeight.w500,
-                    ),
+                  style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                    fontWeight: FontWeight.w500,
                     color: Color(0xFF328303),
                   ),
                 ),
@@ -248,10 +234,8 @@ class UserInterestedProviderListCard extends StatelessWidget {
                   "⭐ ${rating ?? "no rating"}",
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
-                  style: GoogleFonts.roboto(
-                    textStyle: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      fontWeight: FontWeight.w500,
-                    ),
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    fontWeight: FontWeight.w500,
                     color: Color(0xFF000000),
                   ),
                 ),
@@ -266,10 +250,8 @@ class UserInterestedProviderListCard extends StatelessWidget {
                   "${experience ?? "no rating"} yrs exp",
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
-                  style: GoogleFonts.roboto(
-                    textStyle: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      fontWeight: FontWeight.w500,
-                    ),
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    fontWeight: FontWeight.w500,
                     color: Color(0xFF000000),
                   ),
                 ),
@@ -308,11 +290,9 @@ class UserInterestedProviderListCard extends StatelessWidget {
                 textAlign: TextAlign.center,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: GoogleFonts.roboto(
-                  textStyle: Theme.of(context).textTheme.labelLarge?.copyWith(
-                    color: Color(0xFFFFFFFF),
-                    fontWeight: FontWeight.w500,
-                  ),
+                style:  Theme.of(context).textTheme.labelLarge?.copyWith(
+                  color: Color(0xFFFFFFFF),
+                  fontWeight: FontWeight.w500,
                 ),
               ),
             ),

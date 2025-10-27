@@ -1,5 +1,3 @@
-
-
 import '../../../flutterprovider.dart';
 
 class ProviderServiceListCard extends StatelessWidget {
