@@ -1,11 +1,11 @@
 import 'package:flutterprovider/flutterprovider.dart';
 
-class UserExpansionTile extends StatelessWidget {
+class UserExpansionTileListCard extends StatelessWidget {
   final String dp;
   final String title;
   final String subtitle;
 
-  const UserExpansionTile({
+  const UserExpansionTileListCard({
     super.key,
     required this.dp,
     required this.title,

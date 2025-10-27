@@ -1,12 +1,12 @@
 import 'package:flutterprovider/flutterprovider.dart';
 
-class UserAddressCard extends StatelessWidget {
+class UserAddressListCard extends StatelessWidget {
   final String? address;
   final String? phone;
   final bool isPrimary;
   final VoidCallback? onPress;
 
-  const UserAddressCard({
+  const UserAddressListCard({
     super.key,
     this.address,
     this.phone,
