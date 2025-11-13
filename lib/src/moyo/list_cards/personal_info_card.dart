@@ -1,4 +1,7 @@
-import 'package:flutterprovider/flutterprovider.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+
+import 'package:google_fonts/google_fonts.dart';
 
 class PersonalInfoCard extends StatelessWidget {
   final String iconPath;

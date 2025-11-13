@@ -1,3 +1,8 @@
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 import '../../../flutterprovider.dart';
 
 class UserServiceDetails extends StatelessWidget {
@@ -57,7 +62,7 @@ class UserServiceDetails extends StatelessWidget {
         child: Column(
           spacing: 10,
           children: [
-            _catSubcatDate(context, category, subCategory, date),
+            _catSubCatDate(context, category, subCategory, date),
             if (!(status == "completed" || status == "cancelled"))
               _sosPinTimeLeftCallMessage(context, pin, providerPhone),
             _dpNameStatus(context, _currentStatusChip(context, status)),
@@ -183,7 +188,7 @@ class UserServiceDetails extends StatelessWidget {
     }
   }
 
-  Widget _catSubcatDate(
+  Widget _catSubCatDate(
     BuildContext context,
     String? category,
     String? subCategory,
