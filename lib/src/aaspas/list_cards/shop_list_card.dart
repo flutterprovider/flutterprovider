@@ -86,6 +86,10 @@ class ShopListCard extends StatelessWidget {
                                   ?.copyWith(color: Colors.white),
                             ),
                           ),
+                          // child: Text(
+                          //   "Job",
+                          //   style: Theme.of(context).textTheme.labelSmall,
+                          // ),
                         ),
                       ),
                   ],
