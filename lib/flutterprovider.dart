@@ -16,6 +16,7 @@ export 'src/aaspas/other_widgets/widget_heading.dart';
 ///  [custom_widgets]
 export 'src/custom_widgets/center_column.dart';
 export 'src/custom_widgets/center_row.dart';
+export 'src/custom_widgets/center_text.dart';
 ///  [extensions]
 export 'src/extensions/bool_extensions.dart';
 export 'src/extensions/build_context_extensions.dart';

@@ -47,3 +47,8 @@ extension ParseDate on String {
     }
   }
 }
+
+extension GetFontName on String {
+  // String get getFontNameFromFontFamily => this.split('_').first;
+  String get getFontNameFromFontFamily => split('_').first.capitalize;
+}
