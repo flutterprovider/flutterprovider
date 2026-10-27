@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
-import '../../../flutterprovider.dart';
+import '../../../../flutterprovider.dart';
 
 class UserInterestedProviderListCard extends StatelessWidget {
   final String? providerName;
@@ -113,9 +113,10 @@ class UserInterestedProviderListCard extends StatelessWidget {
                   providerName ?? "no name",
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: Theme.of(context).textTheme.titleMedium
-                      ?.copyWith(fontWeight: FontWeight.w600,color: Color(0xFF1D1B20),),
-
+                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xFF1D1B20),
+                  ),
                 ),
                 Text(
                   "(${gender ?? "no gender"} - ${age ?? "No age"}years)",
@@ -136,13 +137,13 @@ class UserInterestedProviderListCard extends StatelessWidget {
             children: [
               Text(
                 distance ?? "No distance",
-                style:  Theme.of(context).textTheme.labelLarge?.copyWith(
+                style: Theme.of(context).textTheme.labelLarge?.copyWith(
                   color: Colors.black.withAlpha(100),
                 ),
               ),
               Text(
                 "(${reachTime ?? "No reachTime"})",
-                style:  Theme.of(context).textTheme.labelLarge?.copyWith(
+                style: Theme.of(context).textTheme.labelLarge?.copyWith(
                   color: Colors.black.withAlpha(100),
                 ),
               ),
@@ -293,7 +294,7 @@ class UserInterestedProviderListCard extends StatelessWidget {
                 textAlign: TextAlign.center,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style:  Theme.of(context).textTheme.labelLarge?.copyWith(
+                style: Theme.of(context).textTheme.labelLarge?.copyWith(
                   color: Color(0xFFFFFFFF),
                   fontWeight: FontWeight.w500,
                 ),
@@ -314,10 +315,12 @@ class UserInterestedProviderListCard extends StatelessWidget {
                   fit: BoxFit.cover,
                   // width: 80,
                   // height: 80,
-                  placeholder: (context, url) =>
-                      Image.asset('packages/flutterprovider/assets/images/aaspas_shopPlaceholder.png'),
-                  errorWidget: (context, url, error) =>
-                      Image.asset('packages/flutterprovider/assets/images/aaspas_shopPlaceholder.png'),
+                  placeholder: (context, url) => Image.asset(
+                    'packages/flutterprovider/assets/images/aaspas_shopPlaceholder.png',
+                  ),
+                  errorWidget: (context, url, error) => Image.asset(
+                    'packages/flutterprovider/assets/images/aaspas_shopPlaceholder.png',
+                  ),
                 ),
               ],
             ),

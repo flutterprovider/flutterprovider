@@ -1,10 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
-import '../../../flutterprovider.dart';
+import '../../../../flutterprovider.dart';
 
-class ProviderServiceListCard extends StatelessWidget {
+class UserServiceListCard extends StatelessWidget {
   final String? category;
   final String? subCategory;
   final String? date;
@@ -17,7 +16,7 @@ class ProviderServiceListCard extends StatelessWidget {
 
   final VoidCallback? onPress;
 
-  const ProviderServiceListCard({
+  const UserServiceListCard({
     super.key,
     this.category,
     this.subCategory,
@@ -61,18 +60,17 @@ class ProviderServiceListCard extends StatelessWidget {
                         "$category > $subCategory",
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: GoogleFonts.roboto(
-                          textStyle: Theme.of(context).textTheme.titleMedium
-                              ?.copyWith(fontWeight: FontWeight.w600),
-                          color: Color(0xFF1D1B20),
-                        ),
+                        style: Theme.of(context).textTheme.titleMedium
+                            ?.copyWith(
+                              fontWeight: FontWeight.w600,
+                              color: Color(0xFF1D1B20),
+                            ),
                       ),
                     ),
                     Text(
                       date ?? "No date",
-                      style: GoogleFonts.roboto(
-                        textStyle: Theme.of(context).textTheme.labelLarge
-                            ?.copyWith(color: Colors.black.withAlpha(100)),
+                      style: Theme.of(context).textTheme.labelLarge?.copyWith(
+                        color: Colors.black.withAlpha(100),
                       ),
                     ),
                   ],
@@ -129,16 +127,12 @@ class ProviderServiceListCard extends StatelessWidget {
                                   "₹ ${price ?? "No price"} /-",
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
-                                  style: GoogleFonts.roboto(
-                                    textStyle: Theme.of(context)
-                                        .textTheme
-                                        .titleMedium
-                                        ?.copyWith(
-                                          fontWeight: FontWeight.w700,
-                                          fontSize: 18,
-                                        ),
-                                    color: Color(0xFF1D1B20),
-                                  ),
+                                  style: Theme.of(context).textTheme.titleMedium
+                                      ?.copyWith(
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 18,
+                                        color: Color(0xFF1D1B20),
+                                      ),
                                 ),
                               ),
                               Text(
@@ -146,14 +140,8 @@ class ProviderServiceListCard extends StatelessWidget {
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 textAlign: TextAlign.end,
-                                style: GoogleFonts.roboto(
-                                  textStyle: Theme.of(context)
-                                      .textTheme
-                                      .labelLarge
-                                      ?.copyWith(
-                                        color: MoyoColorBox.moyoOrange,
-                                      ),
-                                ),
+                                style: Theme.of(context).textTheme.labelLarge
+                                    ?.copyWith(color: MoyoColorBox.moyoOrange),
                               ),
                             ],
                           ),
@@ -178,15 +166,13 @@ class ProviderServiceListCard extends StatelessWidget {
                                     priceBy ?? "N/A",
                                     maxLines: 2,
                                     overflow: TextOverflow.ellipsis,
-                                    style: GoogleFonts.roboto(
-                                      textStyle: Theme.of(context)
-                                          .textTheme
-                                          .bodyMedium
-                                          ?.copyWith(
-                                            fontWeight: FontWeight.w500,
-                                          ),
-                                      color: MoyoColorBox.moyoOrange,
-                                    ),
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .bodyMedium
+                                        ?.copyWith(
+                                          fontWeight: FontWeight.w500,
+                                          color: MoyoColorBox.moyoOrange,
+                                        ),
                                   ),
                                 ),
                               ),
@@ -196,26 +182,24 @@ class ProviderServiceListCard extends StatelessWidget {
                                 child: Row(
                                   spacing: 6,
                                   children: [
-                                    // if (status == "No status")
-                                    //   Text(
-                                    //     "${providerCount ?? "No Count"}",
-                                    //     maxLines: 1,
-                                    //     overflow: TextOverflow.ellipsis,
-                                    //     style: GoogleFonts.roboto(
-                                    //       textStyle: Theme.of(context)
-                                    //           .textTheme
-                                    //           .bodyMedium
-                                    //           ?.copyWith(
-                                    //             fontWeight: FontWeight.w500,
-                                    //           ),
-                                    //       color: MoyoColorBox.moyoOrange,
-                                    //     ),
-                                    //   ),
-                                    // if (status == "No status")
-                                    //   Icon(
-                                    //     Icons.work_outline,
-                                    //     color: MoyoColorBox.moyoOrange,
-                                    //   ),
+                                    if (status == "No status")
+                                      Text(
+                                        "${providerCount ?? "No Count"}",
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
+                                        style: Theme.of(context)
+                                            .textTheme
+                                            .bodyMedium
+                                            ?.copyWith(
+                                              fontWeight: FontWeight.w500,
+                                              color: MoyoColorBox.moyoOrange,
+                                            ),
+                                      ),
+                                    if (status == "No status")
+                                      Icon(
+                                        Icons.work_outline,
+                                        color: MoyoColorBox.moyoOrange,
+                                      ),
 
                                     /// Status Chip
                                     currentStatusChip(context, status),
@@ -239,26 +223,24 @@ class ProviderServiceListCard extends StatelessWidget {
 
   Widget currentStatusChip(BuildContext context, String status) {
     switch (status) {
-      case 'accepted':
+      case 'ongoing':
         return Container(
           padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
           decoration: BoxDecoration(
-            color: Color(0xFFE8FEEA),
+            color: Color(0xFFDEEAFA),
             borderRadius: BorderRadius.all(Radius.circular(50)),
           ),
           child: Text(
-            "Accepted",
+            "Ongoing",
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: GoogleFonts.roboto(
-              textStyle: Theme.of(
-                context,
-              ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w500),
-              color: Color(0xFF4ADB4A),
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+              fontWeight: FontWeight.w500,
+              color: Color(0xFF1A4E88),
             ),
           ),
         );
-      case 'COMPLETED':
+      case 'completed':
         return Container(
           padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
           decoration: BoxDecoration(
@@ -266,18 +248,16 @@ class ProviderServiceListCard extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.circular(50)),
           ),
           child: Text(
-            "COMPLETED",
+            "Completed",
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: GoogleFonts.roboto(
-              textStyle: Theme.of(
-                context,
-              ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w500),
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+              fontWeight: FontWeight.w500,
               color: MoyoColorBox.moyoGreen,
             ),
           ),
         );
-      case 'CANCELLED':
+      case 'cancelled':
         return Container(
           padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
           decoration: BoxDecoration(
@@ -285,13 +265,11 @@ class ProviderServiceListCard extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.circular(50)),
           ),
           child: Text(
-            "CANCELLED",
+            "Cancelled",
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: GoogleFonts.roboto(
-              textStyle: Theme.of(
-                context,
-              ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w500),
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+              fontWeight: FontWeight.w500,
               color: Color(0xFFDB4A4C),
             ),
           ),

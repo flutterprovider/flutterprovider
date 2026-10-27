@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../../flutterprovider.dart';
+import '../../../../flutterprovider.dart';
 
 class UserServiceDetails extends StatelessWidget {
   final String? category;
@@ -289,7 +289,9 @@ class UserServiceDetails extends StatelessWidget {
                     color: Color(0xFF0084FF),
                   ),
                 ),
-                SvgPicture.asset("packages/flutterprovider/assets/icons/moyo_timer_of_service.svg"),
+                SvgPicture.asset(
+                  "packages/flutterprovider/assets/icons/moyo_timer_of_service.svg",
+                ),
               ],
             ),
           Row(
@@ -297,8 +299,12 @@ class UserServiceDetails extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             spacing: 16,
             children: [
-              SvgPicture.asset("packages/flutterprovider/assets/icons/moyo_call_action.svg"),
-              SvgPicture.asset("packages/flutterprovider/assets/icons/moyo_message_action.svg"),
+              SvgPicture.asset(
+                "packages/flutterprovider/assets/icons/moyo_call_action.svg",
+              ),
+              SvgPicture.asset(
+                "packages/flutterprovider/assets/icons/moyo_message_action.svg",
+              ),
             ],
           ),
         ],
@@ -339,10 +345,12 @@ class UserServiceDetails extends StatelessWidget {
                     fit: BoxFit.cover,
                     // width: 80,
                     // height: 80,
-                    placeholder: (context, url) =>
-                        Image.asset('packages/flutterprovider/assets/images/aaspas_shopPlaceholder.png'),
-                    errorWidget: (context, url, error) =>
-                        Image.asset('packages/flutterprovider/assets/images/aaspas_shopPlaceholder.png'),
+                    placeholder: (context, url) => Image.asset(
+                      'packages/flutterprovider/assets/images/aaspas_shopPlaceholder.png',
+                    ),
+                    errorWidget: (context, url, error) => Image.asset(
+                      'packages/flutterprovider/assets/images/aaspas_shopPlaceholder.png',
+                    ),
                   ),
                 ],
               ),
@@ -572,7 +580,9 @@ class UserServiceDetails extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             spacing: 8,
             children: [
-              SvgPicture.asset("packages/flutterprovider/assets/icons/moyo_close-filled.svg"),
+              SvgPicture.asset(
+                "packages/flutterprovider/assets/icons/moyo_close-filled.svg",
+              ),
               Text(
                 "Cancel the service",
                 textAlign: TextAlign.center,
@@ -610,7 +620,9 @@ class UserServiceDetails extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             spacing: 8,
             children: [
-              SvgPicture.asset("packages/flutterprovider/assets/icons/moyo_task-complete.svg"),
+              SvgPicture.asset(
+                "packages/flutterprovider/assets/icons/moyo_task-complete.svg",
+              ),
               Text(
                 "Task Complete",
                 textAlign: TextAlign.center,
@@ -648,7 +660,9 @@ class UserServiceDetails extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             spacing: 8,
             children: [
-              SvgPicture.asset("packages/flutterprovider/assets/icons/moyo_white_star.svg"),
+              SvgPicture.asset(
+                "packages/flutterprovider/assets/icons/moyo_white_star.svg",
+              ),
               Text(
                 "Rate Service",
                 textAlign: TextAlign.center,
